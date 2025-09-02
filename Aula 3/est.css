@@ -1,0 +1,54 @@
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:bisque; 
+    padding: 10px;
+    border: 2px; color:blue;
+}
+
+.barra p {
+    font-size: 30px;
+    color: darkgreen;
+}
+.inicial {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightskyblue;
+}
+.img{
+      display: flex;
+      justify-content: center;
+       gap: 20px
+}
+.h3{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+.videos-mapa{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    gap: 40px;
+}
+table {
+    margin: 20px auto;         
+    border-style: dashed; 
+    border: 2px solid darkred;
+    text-align: center;
+    font-size: 16px;
+}
+
+th, td {
+    border: 1px solid darkred; 
+    padding: 10px 15px;
+}
+.barra final{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:bisque; 
+    padding: 10px;
+}
