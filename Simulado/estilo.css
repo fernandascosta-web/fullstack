@@ -1,0 +1,31 @@
+.img{
+      display: flex;
+      justify-content: space-between;
+       margin: 15px;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    color:grey;
+}
+.flex-container div{
+    background-color: red;
+    font-size: 15px;
+    padding: 20px;
+    color: white;
+}
+.H1 {
+    color: red;
+    justify-content: flex-start;
+}
+.n1 {
+    background-color: grey;
+    font-size: 15px;
+    padding: 20px;
+    color: white;
+    justify-content: center;
+    display: flex;
+}
+.dia{
+    justify-content: flex-start;
+}
