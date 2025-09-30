@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desenho com Canvas</title>
+    <style>
+        body {
+            background-color: white;
+            ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        canvas {
+            background-color: #aaffdd;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+
+    <script>
+        let canvas = document.getElementById("canvas");
+        let ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.fillStyle = "grey";
+        ctx.fillRect(0, 200, 300, 100);
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.fillStyle = "#8B4513";
+        ctx.fillRect(110, 110, 95, 90);
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.fillStyle = "yellow";
+        ctx.strokeStyle = "yellow";
+        ctx.arc(250, 60, 40, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+
+        ctx.beginPath();
+        ctx.fillStyle = "deepskyblue"
+        ctx.fillRect(115, 130, 25, 30);
+        ctx.fillRect(175, 130, 25, 30);
+        ctx.closePath()
+
+        ctx.beginPath();
+        ctx.fillStyle = "#5a3310";
+        ctx.fillRect(145, 160, 25, 40)
+        ctx.closePath()
+
+        ctx.beginPath();
+        ctx.fillStyle = "#8B4513";
+        ctx.fillRect(35, 145, 25, 55)
+        ctx.closePath()
+
+        ctx.beginPath();
+        ctx.fillStyle = "#8B4513";
+        ctx.fillRect(245, 185, 25, 55)
+        ctx.closePath()
+
+        ctx.beginPath();
+        ctx.fillStyle = "dodgerblue";
+        ctx.moveTo(0, 200);
+        ctx.lineTo(0, 300);
+        ctx.lineTo(100, 300);
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.fillStyle = "green"
+        ctx.strokeStyle = "green"
+        ctx.arc(45, 145, 30, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.fillStyle = "green"
+        ctx.strokeStyle = "green"
+        ctx.arc(255, 175, 30, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.fillStyle = "red";
+        ctx.moveTo(110, 110);
+        ctx.lineTo(155, 60)
+        ctx.lineTo(205, 110)
+        ctx.fill();
+        ctx.closePath();
+
+
+        ctx.beginPath();
+        ctx.fillStyle = "dodgerblue";
+        ctx.arc(0, 200, 30, 1 * Math.PI, 2 * Math.PI);
+        ctx.fill();
+        ctx.closePath();
+
+
+        ctx.beginPath();
+        ctx.arc(150, 300, 30, 1 * Math.PI, 2 * Math.PI);
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.fillStyle = "dodgerblue";
+        ctx.fillRect(0, 195, 30,160);
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.fillStyle = "dodgerblue";
+        ctx.fillRect(0,270,155,100);
+        ctx.closePath();
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
