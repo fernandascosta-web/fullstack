@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa de Dados</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let totalSalarios = 0;      
+        let count = 0;                 
+        let maiorIdade = -1;           
+        let menorIdade = Infinity;  
+        let sal_5000 = 0;
+       
+        while (true) {
+            let idade = parseInt(prompt("Digite a idade (digite uma idade negativa para encerrar):"));
+            
+            if (idade < 0) {
+                break;
+            }
+            
+
+            let sexo = prompt("Digite o sexo (M/F):");
+            
+            let salario = parseFloat(prompt("Digite o salário:"));
+            
+            totalSalarios += salario;
+            count++;
+
+            if (idade > maiorIdade) maiorIdade = idade;
+            if (idade < menorIdade) menorIdade = idade;
+
+            if (sexo === 'F' && salario <= 5000) {
+                sal_5000++;
+            }
+        }
+
+    
+        let mediaSalarios = totalSalarios / count;
+
+        if (count > 0) {
+            alert("Média de salário do grupo: R$" + mediaSalarios.toFixed(2));
+            alert("Maior idade do grupo: " + maiorIdade);
+            alert("Menor idade do grupo: " + menorIdade);
+            alert("Quantidade de mulheres com salário até R$5000,00:"+ sal_5000);
+        } else {
+            alert("Nenhum dado foi inserido.");
+        }
+    </script>
+</body>
+</html>

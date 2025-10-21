@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animação com Canvas</title>
+
+  <style>
+    body {
+      background-color: #f0f8ff; 
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    canvas {
+      border: 2px solid #444;
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="meuCanvas" width="300" height="300"></canvas>
+
+  <script>
+    const canvas = document.getElementById("meuCanvas");
+    const ctx = canvas.getContext("2d");
+
+      const imgFundo = new Image();
+    imgFundo.src = "https://img.freepik.com/fotos-gratis/dia-internacional-da-educacao-em-estilo-de-desenho-animado-com-livro-aberto-e-mundo-de-fantasia_23-2151007440.jpg?w=740&q=80";
+   
+    const imgPrincipal = new Image();
+    imgPrincipal.src = "https://www.tudodesenhos.com/d/estante-de-livros-9b7a5557-d625-4ad4-8b8e-ca65b2a26b79";
+
+    function desenhar() {
+      ctx.drawImage(imgFundo, 0, 0, canvas.width, canvas.height);
+
+      ctx.drawImage(imgPrincipal, 0, 0, canvas.width, canvas.height);
+    }
+
+    imgFundo.onload = function() {
+      imgPrincipal.onload = desenhar;
+    };
+  
+    const img = new Image();
+ img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRldLG3pgagbPC9QKlWPF7ADlk6qJZ55GMCGQ&s";
+
+    const imagem = {
+  x: 150,
+  y: 150,
+  largura: 60,
+  altura: 60,
+  desenha: function() {
+    ctx.drawImage(
+      img,
+      this.x - this.largura / 2,
+      this.y - this.altura / 2,
+      this.largura,
+      this.altura
+    );
+  }
+};
+
+
+    document.addEventListener("mousemove", function(e) {
+      const rect = canvas.getBoundingClientRect();
+      let xMouse = e.clientX - rect.left;
+      let yMouse = e.clientY - rect.top;
+
+      const limiteEsq = imagem.largura / 2;
+      const limiteDir = canvas.width - imagem.largura / 2;
+      const limiteCima = imagem.altura / 2;
+      const limiteBaixo = canvas.height - imagem.altura / 2;
+
+      if (xMouse < limiteEsq) xMouse = limiteEsq;
+      if (xMouse > limiteDir) xMouse = limiteDir;
+      if (yMouse < limiteCima) yMouse = limiteCima;
+      if (yMouse > limiteBaixo) yMouse = limiteBaixo;
+
+      imagem.x = xMouse;
+      imagem.y = yMouse;
+    });
+
+    function animacao() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      imagem.desenha();
+      requestAnimationFrame(animacao);
+    }
+
+    img.onload = animacao;
+  </script>
+</body>
+</html>

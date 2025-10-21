@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contagem Decrescente</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let entrada = prompt("Entre com um número inteiro positivo: ");
+        let entrada_int = parseInt(entrada);
+        let stringResultado = "";
+        if (!isNaN(entrada_int) && entrada_int >= 0) {
+    
+            while (entrada_int >= 0) {
+                stringResultado += entrada_int + " ";
+                entrada_int--;
+            }
+            window.alert(stringResultado);
+        } else {
+            window.alert("Por favor, insira um número inteiro positivo.");
+        }
+
+        window.alert("Seu número é: " + entrada);
+    </script>
+</body>
+</html>
