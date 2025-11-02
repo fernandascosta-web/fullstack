@@ -1,0 +1,279 @@
+
+body {
+    background-color: lightgray;
+    font-family: 'SansSerif';
+    margin: 0;
+    padding-bottom: 90px;
+    position: relative; /* Importante para o posicionamento dos ícones */
+}
+
+header {
+    background-color: lightskyblue;
+    text-align: center;
+    border: 2px solid darkgreen;
+}
+
+header h1 {
+    color: darkgreen;
+    font-size: 30pt;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    background-color: bisque;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    border-top: 2px solid darkgreen;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+}
+
+#introducao, #livros, #contatos {
+    margin: 30px auto; /* Centraliza a seção horizontalmente */
+    text-align: center;
+    max-width: 900px; /* Limita a largura para melhor leitura */
+}
+#videos {
+    margin: 30px auto;
+    text-align: center;
+}
+
+h2 {
+    color: indigo;
+    font-size: 22pt;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18pt;
+}
+
+.livros-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.livros-container img {
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px gray;
+}
+
+.videos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#imgA {
+  position: absolute;  
+  bottom: 15px;
+  top: 15px;       
+  left: 0;        
+  width: 130px;     
+  height: auto;
+}
+
+#imgB {
+  position: absolute;  
+  bottom: 15px;     
+  top: 10px;  
+  right: 10px;        
+  width: 130px;     
+  height: auto;
+}
+
+.quadrado {
+  position: relative;
+  width: 100%;
+  max-width: 1890px; 
+  box-sizing: border-box;
+  height: 175px; 
+  background-color: bisque; 
+  border: 4px solid darkblue;
+  text-align: center;
+  justify-content: center;
+  color: darkgreen;
+}
+
+.bluequadrado {
+  width: 100%;
+  max-width: 1890px;
+  height: 90px;
+  background-color: lightskyblue;
+  display: flex;                  
+  justify-content: center;  
+  align-items: center;
+  gap: 110px;            
+  }
+
+.bluequadrado h3,a{
+  text-decoration: none;
+  color: darkred;
+}
+
+.bluequadrado a:hover{
+  color: deeppink;
+}
+  .introduction {
+    text-align: center;
+  }
+
+.text {
+  text-align: center;
+  color: blueviolet;
+  margin: 10px;
+}
+
+.imagens {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 10px;
+  position: relative;
+  width: 1700px;
+  margin: auto;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  position:relative;
+  width: 800px;
+  height:350px;
+  margin:auto;
+}
+
+.tabela{
+  border-style:dashed;color:  red;      
+  border-collapse: collapse;  
+  width: 423px;
+  margin: 0 auto;             
+  text-align: left;
+  font-family: Arial, sans-serif;
+  white-space: nowrap;
+}
+
+.tabela th {
+  width: 100%;
+  border: 2px solid red;   
+  padding: 10px;       
+  text-align: center;
+}
+
+.tabela td {
+  width: 100%;
+  border: 2px solid red;   
+  padding: 10px;       
+  color:black;    
+}
+
+
+.amareloquadrado {
+  width: 500px; 
+  height: 100px;
+  background-color: yellow; 
+  color: black;
+  margin: 20px auto;
+  padding: 0 15px 15px 15px;
+  }
+
+.amareloquadrado h3 {
+  margin-top: 0;
+  margin-left: 0;
+  padding: 0;
+  width: calc(100% + 30px); 
+  position: relative;
+  left: -15px; 
+}
+
+.amareloquadrado ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.amareloquadrado li {
+  margin: 5px 0;
+}
+
+.amareloquadrado li span {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+}
+
+.amareloquadrado a {
+  color: darkred;
+  text-decoration: none;
+}
+
+.amareloquadrado a:hover {
+  text-decoration: underline;
+}
+
+
+.quadradofinal {
+  position: relative;
+  margin-bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 140px; 
+  background-color: bisque; 
+  text-align: center;
+  justify-content: center;
+}
+
+html, body {
+  height: 100%;
+}
+
+#imgC {
+  position: absolute;  
+  bottom: 15px;
+  top: 10px;       
+  left: 0;        
+  width: 115px;     
+  height: auto;         
+}
+
+#imgD {
+  position: absolute;  
+  bottom: 15px;     
+  top: 10px;  
+  right: 10px;        
+  width: 80px;     
+  height: auto;
+}
+
+.sem_negrito1 {
+    font-weight: normal;               
+    font-family: "Comic Sans MS", cursive, sans-serif; 
+    font-size: 15pt;
+}
+
+.sem_negrito2 {
+    font-weight: normal;               
+    font-size: 20pt;
+}

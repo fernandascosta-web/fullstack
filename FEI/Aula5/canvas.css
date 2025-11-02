@@ -1,0 +1,21 @@
+body{
+  background:#fff;
+  min-height:100vh;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+canvas{
+  background:#fff;
+  border:1px solid #000;
+  box-shadow: 0 3px 8px rgba(0,0,0,.1);
+}
+
+/* casinha tem fundo verdinho como você usou; geométrico é branco */
+#canvas1{ background:#aaffdd; }
+#canvas2{ background:#ffffff; }

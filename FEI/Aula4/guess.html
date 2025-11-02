@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Adivinhe o Número (0 a 99)</h1>
+        <p>Tente adivinhar o número secreto!</p>
+        
+        <input type="number" id="guessInput" min="0" max="99" placeholder="Digite seu palpite">
+        
+        <button onclick="checkGuess()">Tentar</button>
+        
+        <p id="message"></p>
+        
+        <button onclick="resetGame()" class="hidden" id="resetButton">Novo Jogo</button>
+    </div>
+
+    <script src="guess.js"></script>
+</body>
+</html>

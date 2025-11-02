@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho do elemento */
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fonte moderna e limpa */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9; /* Fundo suave */
+}
+
+/* HEADER - Seção de destaque (Hero) */
+.hero {
+    background-color:purple; /* Cor vibrante */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* ESTRUTURA E SEÇÕES */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.section-content {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.section-content h2 {
+    color: #34495e; /* Título principal da seção */
+    border-bottom: 3px solid purple;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.section-content h3 {
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* GALERIA DE IMAGENS (flexbox para layout responsivo) */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens quebrem a linha */
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center; /* Centraliza as imagens */
+}
+
+.image-item {
+    width: 100%; /* Padrão para telas pequenas */
+    max-width: 300px; /* Limite máximo para cada imagem */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+    transition: transform 0.3s ease; /* Efeito de transição suave */
+}
+
+.image-item:hover {
+    transform: scale(1.03); /* Leve zoom ao passar o mouse */
+}
+
+/* LISTA DE MÚSICAS */
+.music-section {
+    padding-top: 15px;
+}
+
+.music-list {
+    list-style: none; /* Remove os marcadores padrão */
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.music-list li {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-left: 4px solid purple; /* Detalhe colorido */
+    margin-bottom: 8px;
+    border-radius: 4px;
+    font-size: 1.05em;
+}
+
+.song-title {
+    font-weight: bold;
+    color: #3498db;
+}
+
+.music-image {
+    max-width: 250px;
+    display: block; /* Garante que a margem automática funcione */
+    margin: 20px auto;
+}
+
+/* LINKS E BOTÕES */
+a {
+    color: purple;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+.button-link {
+    display: inline-block;
+    background-color: grey; /* Cor para link de ação (CTA) */
+    color: white;
+    padding: 10px 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.button-link:hover {
+    background-color: grey;
+    text-decoration: none;
+}
+
+/* MAPA E VÍDEOS */
+.map-container, .video-container {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.map-container iframe, .video-container iframe {
+    width: 100%;
+    max-width: 560px; /* Mantém a proporção dos vídeos/mapa originais */
+    height: 315px;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+
