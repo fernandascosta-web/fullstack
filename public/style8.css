@@ -1,0 +1,77 @@
+/* ========================================= */
+/* LAB 8, item 2.a: Cor do Fundo & Centralização Vertical/Horizontal */
+/* ========================================= */
+
+body {
+    background-color: lightgray; /* LAB 8, item 2.a: Cor do fundo */
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    
+    /* Centralização completa usando Flexbox (LAB 8, item 2.b) */
+    display: flex; 
+    flex-direction: column; /* Organiza os itens verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que o corpo ocupe a altura total da tela */
+    padding: 20px;
+}
+
+/* ========================================= */
+/* Estilização do Formulário para destaque */
+/* ========================================= */
+
+h1 {
+    color: indigo; /* Cor do info.txt */
+    margin-bottom: 25px;
+}
+
+form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    /* Centraliza o conteúdo dentro do formulário */
+    text-align: center; 
+}
+
+/* Estilo para os inputs */
+input[type="text"], input[type="password"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para o botão */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: darkred; /* Cor do info.txt */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #8b0000;
+}
+
+/* Estilo para os links */
+p a {
+    color: darkred; /* Cor do info.txt */
+    text-decoration: none;
+    margin: 10px 5px;
+    display: inline-block;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

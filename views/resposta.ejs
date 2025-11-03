@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta do Servidor</title>
+    <link rel="stylesheet" href="../public/style8.css">
+</head>
+<body>
+    <h1>Resposta para o usuário:</h1>
+    
+    <% if (status) { %>
+        <h3 style="color: green;">Login realizado com SUCESSO!</h3>
+        <p>Bem-vindo, **<%= usuario %>**!</p>
+        <h2><a href="Project.html">Acesse a página de Projetos</a></h2>
+    <% } else { %>
+        <h2 style="color: red;">Falha no Login</h2>
+        <p>O usuário **<%= usuario %>** não pôde ser autenticado.</p>
+        <p>Credenciais inválidas. Tente usar **admin** e **123**.</p>
+        <p><a href="login">Tentar Novamente</a></p>
+    <% } %>
+    
+    <p><a href="Project.html">Voltar para a página de Projetos</a></p>
+</body>
+</html>
