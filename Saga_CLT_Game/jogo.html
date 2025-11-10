@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Jogo e a Explicação</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #game-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        canvas {
+            border: 2px solid #007bff;
+            background-color: #e6e6fa; 
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="jogo.html">Jogar</a>
+        <a href="dev.html">Desenvolvedora</a>
+    </nav>
+    
+    <div class="container">
+        <h1>Jogue e Entenda: Saga CLT</h1>
+
+        <h2>Comandos e Objetivo</h2>
+        <ul>
+            <li><strong>Movimento:</strong> Teclas Esquerda e Direita (ou A/D) para desviar.</li>
+            <li><strong>Recurso Diferencial:</strong> Tecla **Espaço** para usar um Emprestimo da Nubank de R$1000 (pague juros a cada 10s).</li>
+            <li><strong>Objetivo:</strong> Mantenha o Saldo positivo o máximo de tempo possível.</li>
+        </ul>
+        
+        <div id="game-area">
+            <canvas id="gameCanvas" width="900" height="600"></canvas>
+            <button id="startButton">Iniciar Jogo</button>
+            <p id="gameMessage" style="margin-top: 15px; font-weight: bold; color: green;"></p>
+        </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

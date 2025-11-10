@@ -1,0 +1,102 @@
+/* style.css */
+
+/* Reset básico e configurações de fonte */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef; /* Um cinza claro suave */
+    color: #343a40; /* Texto escuro, profissional */
+    line-height: 1.6;
+}
+
+/* Estilo do Menu de Navegação (NAV) - (Obrigatório: 0.1) */
+nav {
+    background-color: #007bff; /* Azul primário */
+    padding: 18px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 600; /* Um pouco mais encorpado */
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #cce5ff; /* Azul mais claro no hover */
+}
+
+/* Container Principal para centralizar o conteúdo */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos Títulos */
+h1 {
+    color: #007bff;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #007bff;
+}
+
+h2 {
+    color: #0056b3; /* Um tom de azul mais escuro */
+    font-size: 1.5em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* Estilo de Listas */
+ul {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+/* Separador horizontal */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 123, 255, 0.75), rgba(0, 0, 0, 0));
+    margin: 30px 0;
+}
+
+/* Estilo para a área do Canvas e Botão (na página jogo.html) */
+#game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#startButton {
+    background-color: #28a745; /* Verde para Ação */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+#startButton:hover:enabled {
+    background-color: #218838;
+}
+
+#startButton:disabled {
+    background-color: #6c757d; /* Cinza quando desabilitado */
+    cursor: not-allowed;
+}
